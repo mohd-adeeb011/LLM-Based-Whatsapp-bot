@@ -26,8 +26,8 @@ load_dotenv()
 import os
 app = Flask(__name__)
 
-sid='AC3e292184730e217e546f085c5b697da5'
-authToken="3e09df5f2f47432cae7f1d421d2c7c5e"
+sid=""
+authToken=""
 
 tclient=Client(sid,authToken)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
