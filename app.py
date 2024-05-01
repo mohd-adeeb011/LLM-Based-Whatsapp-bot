@@ -27,6 +27,7 @@ import os
 app = Flask(__name__)
 
 
+
 tclient=Client(sid,authToken)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
