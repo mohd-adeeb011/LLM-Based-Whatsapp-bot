@@ -268,7 +268,6 @@ def create_user_in_db(senderId, user_data):
     collection.insert_one(user_data)
 
 def connect_to_mongodb():
-    uri = "mongodb+srv://mohdadeeb110:mongodb123#@cluster0.8ibfe9i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     client = MongoClient(uri)
     try:
         client.admin.command('ping')
